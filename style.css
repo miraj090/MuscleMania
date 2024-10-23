@@ -1,3 +1,36 @@
 *{
     margin: 0;
+    background: black;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    margin:50px 0 100px 0;
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+}
+
+nav h1{
+    color: rgb(230, 83, 60);
+    font-weight: 800;
+    font-size: 30px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+.navbar ul li {
+    color: rgb(255, 255, 255);
+    list-style: none;
+}
+.navbar ul {
+    display: flex;
+    gap: 35px;
+}
+.navbar{
+    padding: 9px;
+    border: 1px solid rgb(57, 56, 56);
+    border-radius: 50px;
+}
+.home{
+    padding: 8px 20px;
+    background-color: tomato;
+    border-radius: 50px;
 }
