@@ -1,13 +1,13 @@
 *{
     margin: 0;
-    background: black;
+    background-color: black;
 }
 
 nav{
     display: flex;
     justify-content: space-around;
-    margin:50px 0 100px 0;
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    padding:50px 0 100px 0;
+   
 }
 
 nav h1{
@@ -34,3 +34,87 @@ nav h1{
     background-color: tomato;
     border-radius: 50px;
 }
+header{
+    margin-bottom: 10%;
+}
+
+.container{
+    margin: 0 15%;
+}
+
+.bannerDetails h1{
+    color: white;
+    font-size: 70px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900px;
+}
+.bannerDetails h1 span{
+    font-family:cursive;
+}
+.bannerDetails p{
+    color: grey;
+    padding: 30px 0;
+    font-size: 16px;
+}
+
+.joinBtn , .DownloadBtn{
+    color: white;
+    padding: 15px 50px;
+    font-size: 18px;
+    border-radius: 45px;
+}
+.joinBtn{
+    background-color: tomato;
+}
+
+.DownloadBtn{
+    border: 1px solid white;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.changeHabit{
+    text-align: center;
+
+}
+
+.changeHabit > h1{
+    color: white;
+    font-size: 54px;
+}
+
+.changeHabit > p {
+    color: grey;
+    padding: 25px 0 60px 0;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards h1{
+    color: white;
+    padding: 20px 0 5px 0;
+}
+.cards p{
+    color: grey;
+}
+
+.cards img{
+    border-radius: 50%;
+}
+
+
+
+
+/* responsive */
+@media screen and (max-width: 576px) {
+    .cards {
+      flex-direction: column;
+      gap: 40px;
+    }
+  }
