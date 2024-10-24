@@ -15,7 +15,7 @@ nav{
    
 }
 
-nav h1 , footer h1{
+nav h1 {
     color: rgb(230, 83, 60);
     font-weight: 800;
     font-size: 30px;
@@ -133,6 +133,86 @@ nav h1 , footer h1{
     background-color: rgb(34, 34, 34);
 }
 
+.homeWorkout img{
+    width: 366px;
+    height: 312px;
+    border-radius: 18px;
+}
+
+.homeWorkout {
+    display: flex;
+    justify-content: space-between;
+    padding:30px;
+    margin-bottom: 60px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 18px;
+}
+
+.bmiSection {
+    padding: 150px 0 5px 0;
+}
+.bmiSection >h1 ,.bmiSection >p{
+    text-align: center;
+}
+.bmi{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(34, 34, 34);
+    padding: 30px;
+    border-radius: 18px;
+}
+
+.bmi h3{
+    color: white;
+    font-size: 28px;
+    padding-bottom:30px ;
+}
+table{
+    border-collapse: collapse;
+}
+
+table, td , th{
+    border: 1px solid grey;
+    padding: 15px;
+}
+
+th{
+    color: white;
+    font-size: 20px;
+    text-align: start;
+}
+td{
+    color: grey;
+}
+
+.bmiCal p{
+    color: grey;
+    padding-bottom: 20px;
+}
+
+form input ,select{
+    padding: 12px 40px 12px 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 5px;
+    color: grey;
+    border: none;
+}
+
+select{
+    padding-right: 140px;
+}
+.selectActivity{
+    width: 100%;
+}
+
+.submitBtn{
+    background-color: tomato;
+    color: white;
+    padding: 16px 50px;
+    border: none;
+    border-radius: 40px;
+}
 .meet{
     padding: 8% 0;
     text-align: center;
@@ -207,27 +287,45 @@ nav h1 , footer h1{
 
 footer{
     background-color: rgb(17, 17, 17);
-    padding-top: 5%;
+    padding: 5%;
 }
 
 .foo{
     display: flex;
     justify-content: space-around;
-  
-
+    align-items: center;
+    padding-bottom: 60px ;
 }
+
+.foo h1 {
+    padding-bottom: 30px;
+    color: tomato;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
 .foo h3{
     color: white;
     font-size: 32px;
+    padding-bottom: 40px;
 }
 .foo p{
     color: grey;
-
+    padding: 10px;
 }
 
-footer hr , footer p {
+hr{
+    border: 1px solid grey;
+}
+.fooP{
+    color: grey;
+    padding:40px ;
+}
+footer hr , .fooP {
     display: none;
 }
+
+
 
 /* responsive */
 @media screen and (max-width: 576px) {
@@ -259,6 +357,7 @@ footer hr , footer p {
     .cards{
       flex-direction: column;
       gap: 40px;
+      padding-bottom: 50px;
     }
 
     .runAnExtra{
@@ -272,9 +371,21 @@ footer hr , footer p {
         height: 170px;
     }
 
+    .homeWorkout{
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        text-align: center;
+      }
+
+    .homeWorkout img {
+        width: 287px;
+        height: 170px;
+    }
+
     .meetCards {
         grid-template-columns: repeat(1, 1fr);
-        gap: 10px;
+        gap: 30px;
         place-items: center;  
     }
 
@@ -300,7 +411,26 @@ footer hr , footer p {
         margin: 0 5%;   
     }
 
-    footer hr, footer p {
+    .bmi{
+        flex-direction: column;
+        gap: 80px;
+    }
+
+    .bmi input{
+        padding-right: 20px;
+    }
+    select{
+        padding-right: 110px;
+    }
+
+    .foo{
+        flex-direction: column;
+        gap: 50px;
+        align-items: start;
+        padding-left: 15px;
+    }
+
+    footer hr, .fooP {
         display: block;
     }
   }
