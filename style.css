@@ -136,8 +136,19 @@ nav h1{
 
 /* responsive */
 @media screen and (max-width: 576px) {
-    .cards {
+    .cards , .runAnExtra{
       flex-direction: column;
       gap: 40px;
+    }
+  }
+
+@media screen and (max-width: 576px) {
+    .runAnExtra{
+      flex-direction: column;
+      gap: 40px;
+    }
+    .runAnExtra img {
+        width: 287px;
+        height: 170px;
     }
   }
