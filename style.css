@@ -15,7 +15,7 @@ nav{
    
 }
 
-nav h1{
+nav h1 , footer h1{
     color: rgb(230, 83, 60);
     font-weight: 800;
     font-size: 30px;
@@ -133,22 +133,175 @@ nav h1{
     background-color: rgb(34, 34, 34);
 }
 
+.meet{
+    padding: 8% 0;
+    text-align: center;
+}
+
+.meetCards div{
+    width: 326.67px;
+    height: 300px;
+}
+
+.meetCards {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    background-color: rgb(17, 17, 17);
+    text-align: start;
+    
+}
+
+.cameron {
+    background-image: url(images/trainer2.png);
+    background-size: cover;
+    border-radius: 18px;
+}
+.bell {
+    background-image: url(images/trainer1.png);
+    background-size: cover;
+    border-radius: 18px;
+
+}
+.darrell {
+    background-image: url(images/trainer3.png);
+    background-size: cover;
+    border-radius: 18px;
+
+}
+.russell {
+    background-image: url(images/trainer4.png);
+    background-size: cover;
+    border-radius: 18px;
+
+}
+.fisher {
+    background-image: url(images/trainer5.png);
+    background-size: cover;
+    border-radius: 18px;
+
+}
+.webb {
+    background-image: url(images/trainer6.png);
+    background-size: cover;
+    border-radius: 18px;
+
+}
+
+.meetCards div h1 {
+    color: white;
+    position: relative;
+    top : 240px;
+    left: 15px;
+}
+
+.meetCards div p {
+    color: grey;
+    font-weight: 800;
+    position: relative;
+    top : 240px;
+    left: 15px;
+}
+
+
+footer{
+    background-color: rgb(17, 17, 17);
+    padding-top: 5%;
+}
+
+.foo{
+    display: flex;
+    justify-content: space-around;
+  
+
+}
+.foo h3{
+    color: white;
+    font-size: 32px;
+}
+.foo p{
+    color: grey;
+
+}
+
+footer hr , footer p {
+    display: none;
+}
 
 /* responsive */
 @media screen and (max-width: 576px) {
-    .cards , .runAnExtra{
+    nav{
+        justify-content: space-between;
+        padding: 50px 15px;
+    }
+    .navbar ul{
+        display: none;
+      
+    }
+    .banner{
       flex-direction: column;
       gap: 40px;
     }
-  }
 
-@media screen and (max-width: 576px) {
+    .bannerDetails h1 {
+        font-size: 50px;
+    }
+
+    .joinBtn , .DownloadBtn{
+        padding: 10px 30px;
+    }
+
+    .h1Style{
+        font-size: xx-large;
+    }
+
+    .cards{
+      flex-direction: column;
+      gap: 40px;
+    }
+
     .runAnExtra{
       flex-direction: column;
       gap: 40px;
+      align-items: center;
+      text-align: center;
     }
     .runAnExtra img {
         width: 287px;
         height: 170px;
     }
+
+    .meetCards {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        place-items: center;  
+    }
+
+    .meetCards div{
+        width: 313px;
+        height: 272px;
+    }
+
+    .meetCards div h1 {
+        top : 210px;
+        left: 15px;
+    }
+
+    .meetCards div p {
+        top: 210px;
+    }
+
+    .russell, .bell{
+        display: none;
+    }
+
+    .container{
+        margin: 0 5%;   
+    }
+
+    footer hr, footer p {
+        display: block;
+    }
   }
+
